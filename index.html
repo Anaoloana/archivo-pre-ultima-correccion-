@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NODO | Un glosario Experimental</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header" aria-label="Encabezado principal">
+    <a class="brand" href="index.html" aria-label="NODO inicio">
+      <span class="brand-title">NODO</span>
+      <span class="brand-subtitle">Un glosario<br>Experimental</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegacion principal">
+      <button class="icon-button" type="button" data-history-action="undo" aria-label="Volver a elegir" title="Volver">
+        <span aria-hidden="true">←</span>
+      </button>
+      <button class="icon-button" type="button" data-history-action="redo" aria-label="Rehacer seleccion" title="Rehacer">
+        <span aria-hidden="true">→</span>
+      </button>
+      <a class="nav-button" href="#az">A-Z</a>
+      <a class="nav-button" href="#buscar">Buscar</a>
+    </nav>
+
+    <button class="menu-button" type="button" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main class="home">
+    <section class="topic-list" data-active-topic="0" aria-label="Secciones principales">
+      <div class="topic-window">
+        <div class="topics">
+          <button class="topic is-selected" type="button" data-topic-index="0">
+            <span class="topic-note">Conceptos básicos<br>que debés saber</span>
+            <span class="topic-word">Principal</span>
+            <span class="topic-selector" aria-hidden="true">→</span>
+          </button>
+          <button class="topic is-near" type="button" data-topic-index="1">
+            <span class="topic-note">Programas e inteligencias<br>artificiales</span>
+            <span class="topic-word">Cuerpo</span>
+            <span class="topic-selector" aria-hidden="true">→</span>
+          </button>
+          <button class="topic is-far" type="button" data-topic-index="2">
+            <span class="topic-note">Resultados, consecuencias y lógicas<br>después de la IA</span>
+            <span class="topic-word">Riesgos</span>
+            <span class="topic-selector" aria-hidden="true">→</span>
+          </button>
+          <button class="topic is-hidden-soft" type="button" data-topic-index="3">
+            <span class="topic-note">Funciones que realizan<br>estas inteligencias</span>
+            <span class="topic-word">Tareas</span>
+            <span class="topic-selector" aria-hidden="true">→</span>
+          </button>
+          <button class="topic is-hidden-soft" type="button" data-topic-index="4">
+            <span class="topic-note">Términos y nociones<br>sobre las inteligencias</span>
+            <span class="topic-word">Codificación</span>
+            <span class="topic-selector" aria-hidden="true">→</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="entry-map" data-map-for="0" aria-label="Entradas de Principal">
+      <div class="map-axis" aria-hidden="true"></div>
+
+      <a class="map-card map-card-contexto" href="contexto.html" data-entry-link="contexto">
+        <img src="Assets/map-contexto.jpg" alt="">
+        <span class="map-card-body">
+          <span class="map-card-title">Contexto</span>
+          <span class="map-chip">Datos <span aria-hidden="true">↘</span></span>
+        </span>
+      </a>
+
+      <a class="map-card map-card-tecnologia" href="tecnologia.html">
+        <img src="Assets/map-tecnologia.jpg" alt="">
+        <span class="map-card-body">
+          <span class="map-card-title">Tecnología</span>
+          <span class="map-chip">Memoria <span aria-hidden="true">↘</span></span>
+        </span>
+      </a>
+
+      <a class="map-card map-card-algoritmo" href="algoritmo.html">
+        <img src="Assets/map-algoritmo.jpg" alt="">
+        <span class="map-card-body">
+          <span class="map-card-title">Algoritmo</span>
+          <span class="map-chip">LLM <span aria-hidden="true">↘</span></span>
+        </span>
+      </a>
+
+      <a class="map-card map-card-sistema" href="sistema.html">
+        <img src="Assets/map-sistema.jpg" alt="">
+        <span class="map-card-body">
+          <span class="map-card-title">Sistema</span>
+          <span class="map-chip">Token <span aria-hidden="true">↘</span></span>
+        </span>
+      </a>
+    </section>
+
+  </main>
+
+  <aside class="home-info-panel" data-home-info-panel aria-label="Informacion del glosario">
+    <button class="home-info-toggle" type="button" data-home-info-toggle aria-expanded="false" aria-label="Abrir informacion del glosario"></button>
+    <div class="home-info-content" aria-hidden="true">
+      <h2>Inteligencia<br>artificial</h2>
+      <p class="home-info-question">¿Cómo se produce el conocimiento?</p>
+      <p>
+        Este glosario reúne conceptos fundamentales para comprender el funcionamiento
+        técnico, social y cultural de la inteligencia artificial contemporánea, así como
+        sus implicancias para el diseño y la producción de conocimiento.
+      </p>
+      <button class="home-info-close" type="button" data-home-info-close aria-label="Cerrar informacion del glosario"></button>
+    </div>
+  </aside>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
